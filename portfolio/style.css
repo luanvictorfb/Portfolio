@@ -16,46 +16,37 @@
 body,html{
     background-color: #161616;
     height: 100vh;
-    width: 100%;
-    display: flex;
-    flex-flow: column;
-    align-items: center;
+    width: 100vw;
 }
 .cabeça{
-    width: 100%;
+    width: 90%;
+    margin: auto;
     display: flex;
-    justify-content: center;
-    align-items: flex-start;
-}
-header{
-    width: 80%;
-    display: flex;
-    flex-flow: row wrap;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
+    flex-flow: row wrap;
     padding: 10px;
     color: white;
     gap: 20px;
-    margin-top: 50px;
+    margin-top: 20px;
 }
-header .logo-p{
+.cabeça .logo-p{
     font-weight: bolder;
     font-size: 2.5em;
 }
-header nav{
+.cabeça nav{
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     height: 50px;
     gap: 40px;
 }
-
-header nav a{
+.cabeça nav a{
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-header nav a::after{
+.cabeça nav a::after{
     content:'';
     width: 0;
     height: 3px;
@@ -63,9 +54,8 @@ header nav a::after{
     background-color: #48e5c2;
     transition: .5s ease-out;
 }
-header nav a:hover::after{
+.cabeça nav a:hover::after{
     width: 100%;
-    transform: scale(1.3em);
 }
 main{
     margin: auto;
@@ -119,10 +109,12 @@ main{
     text-indent: 15px;
 }
 .especialidades{
+    width: 90%;
+    margin: auto;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
-    justify-content: center;
+    justify-content: space-evenly;
     gap:50px;
     margin:50px 0px;
 }
@@ -131,13 +123,17 @@ main{
     flex-flow: column wrap;
     align-items: center;
     justify-content: space-around;
-    width: 500px;
-    height: 500px;
+    justify-items: center;
     background-color: black;
-    padding: 40px;
+    padding: 20px;
     list-style-position: inside;
     border-radius: 13px;
     position: relative;
+    gap: 40px;
+}
+.card h1{
+    color: #48e5c2;
+    font-size: 3em;
 }
 svg{
     max-width: 60px;
@@ -161,6 +157,41 @@ svg{
     filter: blur(1.5rem);
     opacity: 0.5;
 }
+
+.projetos{
+    width: 90%;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 40px;
+}
+.projetos h1{
+    
+}
+.projetos .p a{
+    background-color: #000;
+    padding: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 @property --angle{
     syntax:"<angle>";
     initial-value: 0deg;
@@ -174,10 +205,3 @@ svg{
         --angle:360deg;
     }
 }
-
-.card h1{
-    color: #48e5c2;
-    font-size: 3em;
-}
-
-
