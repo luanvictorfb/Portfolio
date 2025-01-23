@@ -18,6 +18,10 @@ body,html{
     height: 100vh;
     width: 100%;
 }
+h1{
+    text-align: center;
+    margin: 50 0px;
+}
 .cabeça{
     width: 90%;
     margin: auto;
@@ -37,6 +41,7 @@ body,html{
 }
 .cabeça nav{
     display: flex;
+    flex-flow: row wrap;
     align-items: center;
     justify-content: space-evenly;
     height: 50px;
@@ -50,6 +55,9 @@ body,html{
 }
 .cabeça nav a:hover{
     color: #48e5c2;
+}
+.cabeça nav a:active{
+    
 }
 .cabeça nav a::after{
     content:'';
@@ -114,10 +122,10 @@ main{
     text-indent: 15px;
 }
 .especialidades{
-    width: 80%;
-    height: auto;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 300px);
     align-items: center;
     justify-content: space-evenly;
     gap:50px;
@@ -141,7 +149,6 @@ main{
     font-size: 3em;
     flex: 0 1 auto
 }
-    max-width: 60px;
 .card i,svg{
     vertical-align: middle;
 }
@@ -165,20 +172,73 @@ main{
 }
 
 .projetos{
-    width: 90%;
+    width: 100%;
     display: grid;
     grid-template-columns: 1fr;
-    align-items: center;
+    grid-template-rows: repeat(3,80px);
+    align-items: stretch;
     justify-content: space-evenly;
     gap: 40px;
 }
 .projetos h1{
     text-align: center;
 }
-.projetos .p a{
+.projetos .p{
     background-color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: row wrap;
+    justify-content: center;
     padding: 15px;
+    border-radius: 10px;
+    transition: .2s ease-in-out;
+    border: 4px solid black;
 }
+.projetos .p a{
+    text-decoration: none;
+    color: white;
+    text-align: center;
+}
+.projetos .p:hover{
+    transform: translate(-5px,-5px);
+    background-color: #48e5c2;
+    color: #000;
+    box-shadow: 5px 5px black;
+}
+.projetos .p:active{
+    transform: translate(0);
+    box-shadow: none;
+}
+.contato{
+    width: 100%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 50px;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0px;
+}
+.contato .ctt-row{
+    width: 100%;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 50px;
+}
+.contato .ctt-row .ctt{
+    scale: 3;
+    transition: .3s ease-in-out;
+}
+.contato .ctt-row .ctt a{
+    color: white;
+    
+}
+.contato .ctt-row .ctt:hover{
+    transform: translate(0px,-3px);
+}
+
 
 
 
