@@ -105,8 +105,7 @@ header .nav-mobile nav ul li:active{
     display: none;
 }
 main{
-    margin: auto;
-    width: 80%;
+    width: 100%;
     display: flex;
     flex-flow: column;
     justify-content: space-around;
@@ -123,7 +122,7 @@ main{
     margin:80px 0px 50px 0px;
 }
 .inicio .texto-inicio{
-    width: 100%;
+    width: 80%;
 }
 .inicio h1{
     color: #48e5c2;
@@ -149,7 +148,7 @@ main{
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
-    width: 100%;
+    width: 80%;
 }
 .card-row{
     width: 100%;
@@ -202,7 +201,7 @@ main{
 }
 
 .projetos{
-    width: 100%;
+    width: 80%;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3,80px);
@@ -355,7 +354,7 @@ main{
     .card-row{
         display: grid;
         grid-template-columns:repeat(2,1fr);
-        width: 80%;
+        width: 70%;
         align-items: center;
         justify-content: center;
 
