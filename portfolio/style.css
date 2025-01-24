@@ -134,10 +134,11 @@ main{
     border-radius: 50%;
     position: relative;
     transition: .3s ease-in-out;
-
+    border: 5px solid #161616;
 }
 .inicio .imagem img:hover{
     transform: scale(1.05);
+    border: 5px solid #48e5c2;
 }
 .sobre{
     margin:50px 0px;
@@ -148,7 +149,7 @@ main{
     gap: 20px;
 
 }
-.sobre h1{
+.sobre h1,.especialidades h1,.projetos h1,.contato h1{
     color: #48e5c2;
     font-size: 3em;
 }
@@ -160,12 +161,13 @@ main{
     flex-flow: column;
     align-items: center;
     justify-content: space-between;
+    width: 100%;
 }
 .card-row{
     width: 100%;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 300px);
+    flex-flow: column nowrap;
+    width: 100%;
     align-items: center;
     justify-content: space-evenly;
     gap:60px;
@@ -183,6 +185,7 @@ main{
     border-radius: 13px;
     position: relative;
     gap: 40px;
+    height: 400px;
 }
 .card h1{
     color: #48e5c2;
@@ -273,10 +276,13 @@ main{
 }
 .contato .ctt-row .ctt a{
     color: white;
-    
+    transition: .3s ease-in-out;
 }
 .contato .ctt-row .ctt:hover{
     transform: translate(0px,-3px);
+}
+.contato .ctt-row .ctt a:hover{
+    color: #48e5c2;
 }
 
 @property --angle{
@@ -344,7 +350,27 @@ main{
     header .menu-desk a:hover::after{
         width: 100%;
     }
+    .inicio p{
+        font-size: 1.3em;
+    }
     .sobre p{
+        width: 50%;
+        font-size: 1.3em;
+    }
+    .card-row{
+        display: grid;
+        grid-template-columns:repeat(2,1fr);
+        grid-template-rows: auto;
+        width: 80%;
+        align-items: flex-start;
+        justify-content: center;
+        gap: 20px 20px;
+    }
+    .card{
+        width: 400px;
+        height: 400px;
+    }
+    .projetos{
         width: 50%;
     }
 }
