@@ -73,7 +73,7 @@ header .nav-mobile i{
     padding: 20px 4%;
     scale: 2.5;
 }
-header .nav-mobile-aberto ul{
+header .nav-mobile-aberto ul {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(5,50px);
@@ -85,12 +85,17 @@ header .nav-mobile-aberto ul{
     font-weight: bolder;
     transition: .3s ease-in-out;
 }
-header .nav-mobile nav ul li:hover{
+header .nav-mobile nav ul a{
+    text-decoration: none;
+    color: white;
+    transition: .2s;
+}
+header .nav-mobile nav ul li a:hover{
     transform: scale(1.05);
     color: #48e5c2;
 
 }
-header .nav-mobile nav ul li:active{
+header .nav-mobile nav ul li a:active{
     transform: scale(1.05);
     color: #48e5c2;
 }
@@ -321,14 +326,11 @@ main{
         font-weight: bolder;
         transition: .3s linear;
     }
-    header .menu-desk a:hover{
+    header .menu-desk a:hover,header .menu-desk a:active{
         color: #48e5c2;
-        transform: scale(1.2);
+        transform: scale(1.15);
     }
-    header .menu-desk a:active{
-        color: #48e5c2;
-        transform: scale(1.2);
-    }
+    
     header .menu-desk a::after{
         content:'';
         width: 0;
