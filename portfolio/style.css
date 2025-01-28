@@ -184,8 +184,6 @@ main{
 .card i,svg{
     vertical-align: middle;
 }
-.card svg{
-}
 .card::before,.card::after{
     content: '';
     position: absolute;
