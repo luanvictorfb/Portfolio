@@ -1,2 +1,2 @@
 # Portfolio
- Portifolio sobre meu perfil prófissional 
+ Portifolio sobre meu perfil profissional
