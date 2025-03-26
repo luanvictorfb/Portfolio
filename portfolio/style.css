@@ -57,7 +57,7 @@ header .nav-mobile{
     z-index: 5;
     width: 0%;
     overflow: hidden;
-    transition: .4s linear;
+    transition: all .9s ease-in-out;
 }
 header .nav-mobile-aberto i:hover{
     color: #48e5c2;
